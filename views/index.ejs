@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Fortran</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<script type='text/javascript' src='/javascripts/main.js'></script>
+  </head>
+  <body onload='init();' onresize='resize();' style='text-align:center;'>
+	  <div id='container' style='text-align:left;margin-left:auto;margin-right:auto;'>
+	 	 <div id='code' class='textarea' contenteditable='true' style='margin-left:3px;float:left;background:#ffffdd'></div>
+		 <div id='output' class='textarea' contenteditable='false' style='margin-right:3px;color:#00ff00;background:#000000;float:right;'></div>
+	  </div>
+	  <div style='margin-left:auto;margin-right:auto;'>
+		  <button id='compile' onclick='compile();' style='height:32px;margin-left:auto;margin-right:5px;'>compile</button>
+		  <input id='input' onkeyup='if(event.keyCode == 13) input();'></input>
+		  <button id='btn_input' onclick='input();' style='height:32px;margin-right:5px;margin-left:5px;padding-left:8px;padding-right:8px;display:none;'>input</button>
+		  <button id='run' onclick='run();' style='height:32px;margin-right:auto;margin-left:5px;padding-left:16px;padding-right:16px;'>run</button>
+	  </div>
+  </body>
+</html>
